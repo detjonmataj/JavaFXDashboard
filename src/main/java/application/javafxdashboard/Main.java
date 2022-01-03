@@ -6,9 +6,11 @@ import javafx.stage.Stage;
 
 
 public class Main extends Application {
+
     @Override
     public void start(Stage primaryStage) {
         SceneController.LoadInitialScene(primaryStage);
+        primaryStage.getScene().getRoot().requestFocus();
         primaryStage.show();
     }
 
